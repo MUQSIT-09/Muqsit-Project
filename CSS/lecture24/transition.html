@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transition</title>
+    <style>
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transition-property: width;
+            transition-duration: 4s;
+            transition-delay: 1s;
+            transition-timing-function: ease-in-out; */
+            /* transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1); */
+            transition: width 2s,height 5s;/* two transition property */
+
+        }
+        .box:hover{
+            width: 500px;
+            height: 1500px;
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Transition</h1>
+    <p>Switching from one state to another state of styling</p>
+    <p>There is a single switch from source to destination but in animation there is a series/set of complex movement</p>
+    <h2>How to Use:</h2>
+    <p>
+        Define the starting state (e.g., background color is blue). <br>
+        Apply a transition rule (e.g., background color changes over 1 second). <br>    
+        Change the property on an event (e.g., when you hover over the element, it turns red). <br>
+    </p>
+    <h2>Pesudo class</h2>
+    <p>A pseudo-class in CSS is used to style an element based on its state or position, without needing to add extra classes or IDs in HTML.</p>
+    <br><p>Hover Effects - Change style when a user hovers over an element.</p><br>
+    <p>Focus on Inputs - Highlight an input field when clicked.</p><br>
+    <p>First & Last Child – Target specific elements in a list.</p>
+    <div class="box">
+
+    </div>
+
+</body>
+</html>

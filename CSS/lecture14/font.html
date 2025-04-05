@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Font And Colors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        p,pre{
+            font-style: italic;
+            font-size: 20px; /*px=1/96 or 0.22mm*/
+            font-family: "Oswald", serif;
+            font-weight:100;  /*making it more (or) degree of darker/thicker */
+            line-height:32px ; /*Gaps between 2 line*/
+            
+        }
+        #FirstPara{
+            background-color: yellow;
+            color:black;
+        }
+        #SecoundPara{
+            background-color: rgb(24, 29, 181);
+        }
+        #ThirdPara{
+            background-color: rgba(7, 121, 66, 1);
+        }
+        .FirstClass{
+            background-color: #ad0505;
+        }
+        #FourthPara{
+            background-color: hsl(0,100%,50%);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Font In CSS:</h1>
+        <h2>Welcome to CodeHunters</h2>
+        <p id="FirstPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Accusantium dolorum ipsum laborum ea illum eaque iste, tempore
+        amet sunt doloremque, quos, quod rem.
+        </p>
+        <p id="SecoundPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repudiandae soluta adipisci totam, ducimus in
+        nemo assumenda eos illum odit debitis quod dicta veniam ipsam, tenetur rerum animi est? Odit!
+        </p>
+        <p id="ThirdPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, vel. Pariatur, fuga. Est saepe voluptat
+        bus nesciunt ad. Inventore officiis quas amet laborum minima accusantium at, earum quae sapiente! Sapiente 
+        cumque numquam assumenda alias eum minima corrupti molestias blanditiis distinctio et. Provident, ratione!
+        </p>
+        <p class="FirstClass">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic exercitationem ducimus explicabo! 
+            Rem saepe quo animi consequatur, ducimus et officiis quisquam ab veniam.
+        </p>
+        <p id="FourthPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, vel. Pariatur, fuga. Est saepe voluptat
+            bus nesciunt ad. Inventore officiis quas amet laborum minima accusantium at, earum quae sapiente! Sapiente 
+            cumque numquam assumenda alias eum minima corrupti molestias blanditiis distinctio et. Provident, ratione!
+        </p>
+    </section>
+    <section>
+        <h2>FallBacks in Font-Family</h2>
+        <p>By default there will be one after other font family so that for any 
+            reason if the first one is not available then the next one is taken.
+            Ex:font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        </p>
+        <h2>If you want to take your own font-family which is not available in browser then you can use your own family from google font(External Font) </h2>
+        <p>Browsers have all the font-family that is known as web safe font, which is already available 
+        in browser universally
+        </p>
+        <p>Select your font and then click on get the code then copy the link tag and paste in head tag
+            and then copy the font-family code and paste in stylesheet.
+    </p>
+    </section>
+    <section>
+        <h1>Colors In CSS:</h1>
+        <h2>How can we add colors ,In How Many Ways</h2>
+        <h3>1.Named Colors</h3>
+        <p>Add Directly in background-color,color by giving the color name</p>
+        <h3>2.RGB Values</h3>
+        <p>1.You Can give any number inside rgb() and then by hovering choose/set the color shade you want </p>
+        <p>2.You can also give the alphanumeric value inside the rgba(), where the alpha value decides the transparency of the color</p>
+        <h3>3.HexaDecimal Values</h3>
+        <p>Go to browser and search for HexaDecimal color picker you can take the value of the color and apply inside stylesheet</p>
+        <h3>4.HSL = Hue Saturation and Lightness</h3>
+        <pre>
+    1.Hue is a degree on the color wheel from 0 to 360. 0 (or 360) is red, 120 is green, 240 is blue.
+    2.Saturation can be described as the intensity of a color. It is a percentage value from 0% to 100%.
+      100% is full color, no shades of gray.
+      50% is 50% gray, but you can still see the color.
+      0% is completely gray; you can no longer see the color.
+    3.The lightness of a color can be described as how much light you want to give the color, 
+      where 0% means no light (dark), 50% means 50% light (neither dark nor light), and 100% means full light.
+        </pre>
+        <p>HSLA Color Values:</p>
+        <p>HSLA color values are an extension of HSL color values, with an Alpha channel - which specifies the opacity for a color.</p>
+        <p>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):</p>
+    </section>
+</body>
+</html>

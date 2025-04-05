@@ -1,0 +1,29 @@
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: beige;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all 4s linear 1s;
+}
+.container{
+    display: flex;
+    height: 90vh;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size: 36px;
+}
+.box:hover{
+    /* transform: rotate(90deg); */
+    transform: scale(1.5); /* increase the box size to 1,5 times */
+    transform: scale(0.5);   /*Decrease the box size to 0.5 times*/
+    transform: rotate(-45);  /*It will go anti-clockwise*/
+    transform: skew(45deg);  /*It will title for 45deg,For negative anti-clockwise*/
+    transform: translate(500px) ; /*translate(x,y)*/
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animations In CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100vw;
+            height:92vh;
+            background-color: beige;
+            border: 2.5px solid black;
+            position: relative;
+        }
+        .box{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border-radius: 10px;
+            margin: 10px;
+            border: 5px solid rgb(255, 136, 0);
+            /* animation-name: rightMovement; */
+            position: relative;
+            /* animation-duration: 5s;
+            animation-iteration-count: 2; */
+            /* animation-delay: 2s; */
+            /* animation-timing-function: linear; */
+            /* animation-direction: alternate; */
+            /* animation-fill-mode: both;
+            animation-play-state: paused; */
+            animation: 5s linear 1s infinite alternate none running rightMovement; /*Short Hnad Notation*/
+        }
+        .box2 {
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border-radius: 10px;
+            margin: 10px;;
+            position:relative;
+            border: 5px solid rgb(255, 136, 0);
+            animation:5s ease-in 1s infinite alternate none running leftMovement;
+        }
+        @keyframes leftMovement {
+            from {
+                top: 350px;
+                left: 1250px;
+            }
+            to {
+                top: 350px;
+                left: 0;
+            }
+        }
+        @keyframes rightMovement {
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left:1350px;
+            }
+        }
+        .circle{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50px;
+            margin: 10px;
+            position:relative;
+            border: 2px solid black;
+            top: 30%;
+            left: 40%;
+            animation: 10s ease-in-out 0s infinite alternate-reverse none running circleMovement; 
+        }
+        @keyframes circleMovement {
+            0%{
+                top: 1%;
+                left: 5%;
+            }
+            30%{
+                top: 5%;
+                left: 95%;
+            }
+            60%{
+                top: 91%;
+                left: 9%;
+            }
+            100%{
+                top: 31%;
+                left: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <div class="circle">
+
+        </div>
+        <div class="box2">
+
+        </div>
+    </div>
+    <div>
+        <h1>Animations In CSS</h1>
+        <p>Allow elements on a webpage to move or change styles over time.</p>br
+        <h2>1. @keyframes (Defines Animation)</h2>
+        <p>Specifies the animation steps (from → to or percentages). <br>
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }          
+        </p>
+        <h2>2. animation-name</h2>
+        <p>Links an element to a @keyframes animation. <br>
+            div { animation-name: fadeIn; }
+        </p>
+        <h2>3. animation-duration</h2>
+        <p>Sets how long the animation lasts (e.g., 2s, 500ms). <br>
+            div { animation-duration: 2s; }
+        </p>
+        <h2>4. animation-timing-function</h2>
+        <p>Controls the speed curve (ease, linear, ease-in, ease-out, ease-in-out). <br>
+            div { animation-timing-function: ease-in-out; }
+        </p>
+        <h2>It also ahve Cubic Bezier </h2>
+        <p>Cubic Bezier (cubic-bezier(x1, y1, x2, y2)) <br>
+            The animation-timing-function property defines how an animation progresses over time. It controls the speed curve of the animation. <br>
+            A Cubic Bezier curve is a custom speed curve used to control acceleration and deceleration. <br>
+            It takes four numeric values between 0 and 1, which define the curve's shape.
+        </p>
+        <h2>5. animation-delay</h2>
+        <p>Delays the animation start (2s, 0.5s). <br>
+            div { animation-delay: 1s; }
+        </p>
+        <h2>6. animation-iteration-count</h2>
+        <p>Sets how many times the animation repeats (1, infinite).
+            <br>  animation-iteration-count: infinite;
+        </p>
+        <h2>7. animation-direction</h2>
+        <p>Controls the direction (normal, reverse, alternate, alternate-reverse). <br>
+            animation-direction: alternate;
+        </p>
+        <h2>8. animation-fill-mode</h2>
+        <p>Defines styles before/after animation (none, forwards, backwards, both). <br>
+            animation-fill-mode: forwards;
+            in the case of both = both applies the styles before the animation starts (from backwards) and after it ends (from forwards).
+        </p>
+        <h2>9. animation-play-state</h2>
+        <p>Pauses (paused) or plays (running) an animation. <br>
+            animation-play-state: paused;
+        </p>
+        <h2>Shorthand Property (animation)</h2>
+        <p> animation: fadeIn 2s ease-in-out 1s infinite alternate; <br>
+                fadeIn → animation name
+                2s → duration
+                ease-in-out → timing function
+                1s → delay
+                infinite → repeats forever
+                alternate → reverses direction every cycle
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display Property</title>
+    <style>
+        *{
+            padding: 2px;
+            margin: 2px;
+            box-sizing: border-box;
+        }
+        div{
+            border: 1px solid red;
+        }
+        p{
+            border: 2px solid red;
+            margin: 15px;
+            height: 90px;
+            width: 222px; 
+        }
+        span{
+            margin: 20px;
+            padding: 23px;
+            width: 155px;
+            height: 90px;
+            border: 2px green solid;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Display Property</h1>
+    <p>How or In which way you want to render your elements in your UI/webpage</p>
+    <div>
+        Welcome To CodeHunters
+    </div>
+    <div>
+        Welcome To CodeHunters2.0
+    </div>
+    <span>
+        Welcome To CodeHunters
+    </span>
+    <span>
+        Welcome To CodeHunters2.0
+    </span>
+    <h2>Block Element:</h2>
+    <pre>
+        <b>
+    1. New Line
+    2. Width Takes From Extreme Left To Right.
+    3. Custom Width/Height    -> Respect
+    4. Custom Margin/Padding  -> Respect
+        </b>
+    </pre>
+    <h2>Box-sizing : boeder-box</h2>
+    <p>The actual size of the box doesn't gets impacted/it is retain, if it is not used then the actual size is not retain and gets expand</p>
+    <h2>Inline Element</h2>
+    <pre>
+        <b>
+    1.Same Line(If there is no space/width it goes to next line)
+    2.Width is the length of the content.
+    3.Can't Apply Custom width and height.
+    4.Can Apply Margin,Padding only horizontally, but not vertically.
+        </b>
+    </pre>
+    <h2>Can Convert to each other Vice-Versa</h2>
+    <p>Display:Block , Display:inline</p>
+    <h2>If You want mixture of Both inline+block</h2>
+    <p>Then you can use Display:inline-block</p>
+</body>
+</html>

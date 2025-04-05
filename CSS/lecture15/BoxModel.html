@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BoxModel</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0 ;
+        }
+        h1{
+            background-color: aquamarine;
+            /* border-style: solid;
+            border-width: 2px;
+            border-color: brown; */
+            border: solid brown 3px;  /*ShortHandNotation*/
+            border-radius: 11px;
+            /* border-top-left-radius:3px ; */
+            /* border-top: 5px; */
+            /* border-left:solid 20px blue; */
+            width: 350px;
+            height: 200px;
+        }
+        .FirstPara{
+            background-color:antiquewhite ;
+            border: solid brown 3px;  /*ShortHandNotation*/
+            border-radius: 11px;
+            width: 350px;
+            height: 200px;
+            padding: 90px;
+            padding: 15px 20px 25px 30px; /*ShortHandNotation , clock wise */
+            padding: 20px 40px; /*ShortHandNotation, 20 at top and bottom and 40 at right and left */
+            margin: 30px;
+            /* margin-top: 20px;
+            margin-bottom: 30px;
+            margin-left: 30px;
+            margin-left: 15px; */
+            margin: 30px 30px 30px 30px;  /*ShortHandNotation , clock wise */
+        }
+        .SecoundPara{
+            background-color: blueviolet;
+            border: solid brown 3px;  
+            border-radius: 11px;
+            width: 350px;
+        }
+        .ThirdPara{
+            background-color: brown;
+            border: solid brown 3px;  
+            border-radius: 11px;
+            width: 350px;
+        }
+        span{
+            background-color: aquamarine;
+            width: 350px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome To CodeHuters</h1>
+    <span>Welcome To Abdul Muqsit Web dev Course</span>
+    <p>Span Tag is an inline element, which means it only takes up as much width as its content needs, and it doesn't create a separate block like a div.</p>
+    <p>If you want to apply height and width to a span, you need to make it a block or inline-block by using:display: inline-block;</p>
+    <p class="FirstPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus at illum perspiciatis quo sit. Earum non vel facere similique quam corporis fuga, illum enim numquam aliquam iste est, mollitia nesciunt exercitationem officia dolorum laborum rem laboriosam fugiat. Explicabo, deleniti ad.</p>
+    <p class="SecoundPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quod error unde quia iste? Dolorem sed sunt corrupti quia quibusdam, officiis, dolore minus cum ducimus placeat ipsum saepe nam reprehenderit, pariatur eligendi unde animi nostrum qui! Amet officia eaque labore odit vero nihil quisquam molestias corporis obcaecati! Consequuntur, voluptatem sequi!</p>
+    <p class="ThirdPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sed enim ipsa nostrum, odio distinctio dolor odit nemo possimus tempore hic earum esse amet fugiat!</p>
+    <h2>Box Model In CSS:</h2>
+    <p>Box model states that any content rendering/display in the browser, that can be displayed in rectangular box shape only.</p>
+    <h2>Box Model Have 4 Attributes</h2>
+    <h2>1.Content</h2>
+    <p>The main stuff/content inside the element (like text, images, etc.). </p>
+    <h2>2.Padding</h2>
+    <p>The space/layer between the content and the border is your Padding, Padding can be zero also</p>
+    <h2>3.Border</h2>
+    <p> The line around the padding (optional).</p>
+    <h2>4.Margin</h2>
+    <pre>The space/Gap between the two boxes is your Margin,  (Or)
+The space outside the border that separates the element from other elements
+    </pre>
+    <h2>By Defaukt there will be some padding.margin</h2>
+    <p>Then you can use the uNiversal selector and set the padding and margin to zero</p>
+    <h2>Box-Sizing</h2>
+    <p>Is a CSS property that defines how the total width and height of an element are calculated. It determines whether padding 
+       and borders are included in the element's dimensions or if they are added outside the specified width and height.</p>
+    <h2>content-box </h2> 
+    <p>The width and height include only the content of the element.
+       Padding and borders are added outside the defined width and height, increasing the overall size of the element.</p> 
+    <h2>border-box:(Best Practice)</h2>
+    <p>The width and height include content, padding, and borders.
+       Padding and borders do not increase the element's size beyond the specified dimensions</p>
+</body>
+</html>

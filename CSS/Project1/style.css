@@ -1,0 +1,119 @@
+#navlist{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    overflow-x: none;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+nav{
+    width: 100%;
+}
+.navcontainer{
+    width: 100vw;
+    /* background-color: rgb(156, 156, 211); */
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    height: 80px;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navlogo{
+    font-size: 2.5rem;
+    color: azure;
+}
+a{
+    text-decoration: none;
+}
+.navitems{
+    display: flex;
+    gap: 40px;
+}
+.footerbox{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    width: 100%;
+    text-align: center;
+    min-height: 40px;
+}
+#footerpara{
+    color: azure;
+    font-size: 2rem;
+}
+.contentbox{
+    width: 51%;
+    margin: auto;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 1px 1px 30px black;
+}
+.item{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.leftbox{
+    display: flex;  
+    gap: 20px;
+    flex-direction: column;
+}
+.rightbox{
+    position: relative;
+    overflow: hidden;
+}
+.rightbox img{
+    border-radius: 25px;
+    width:400px;
+    height:400px; 
+    transition: all 0.6s linear 0s;
+}
+.rightbox:hover{
+    transform: scale(1.1);
+}
+.leftbox h2{
+    font-size: 2rem;
+}
+.Ingredientsbox{
+    font-size: 1.2rem;
+}
+.Recipebox{
+    font-size: 1.2rem;
+}
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(30, 30, 30, 0.299);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    opacity: 0; /*Not Visible =0, 1 Is for visible*/
+    transition: all 0.3s linear 0s;
+}
+.rightbox:hover .overlay{
+    opacity: 1;
+}
+.rightbox .overlay span{
+    color: azure;
+    font-size: 1.1rem;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>What is Grid</h1>
+    <p>CSS Grid is a layout system that allows you to create flexible, two-dimensional web layouts using rows and columns.  <br>
+       It makes it easy to align and arrange elements without using floats or positioning tricks. <br>
+    </p>
+    <p>Powerfull Layouts are made with the combination of grid and flex</p>
+    <h2>Types Of Grid</h2>
+    <h3>1. Block (display: block;)</h3>
+    <p>Takes up the full width of its parent container. <br>
+        Starts on a new line. <br>
+        Example: div, p, h1
+    </p>
+    <h3>2. Inline-Block (display: inline-block;)</h3>
+    <p>
+        Behaves like an inline element (stays in line with other elements). <br>
+        Respects width and height properties (unlike inline). <br>
+        Example: span style="display: inline-block;">Text span>
+    </p>
+    <h3>3. Inline-Grid (display: inline-grid;)</h3>
+    <p>
+        Behaves like inline-block but uses CSS Grid layout inside.
+        The element stays in line but allows child elements to be arranged using grid properties.
+    </p>
+    <br>
+    <h2>CSS Grid Properties:</h2>
+    <h3>Grid Container Properties</h3>
+    <h4>display</h4>
+    <p>Defines a grid container (grid or inline-grid).</p>
+    <h4>grid-template-columns</h4>
+    <p>Specifies column sizes and numbers.</p>
+    <h4>grid-template-rows </h4>
+    <p>Specifies row sizes and numbers.</p>
+    <h4>grid-template-areas</h4>
+    <p>Defines named grid areas.</p>
+    <h4>grid-template</h4>
+    <p>Shorthand for grid-template-rows, grid-template-columns, and grid-template-areas.</p>
+    <h4>grid-auto-columns</h4>
+    <p>Defines size of auto-generated columns.</p>
+    <h4>grid-auto-rows</h4>
+    <p>Defines size of auto-generated rows.</p>
+    <h4>grid-auto-flow</h4>
+    <p>Controls automatic placement (row, column, dense).</p>
+    <h4>grid-row-gap</h4>
+    <p>Defines vertical space between rows.</p>
+    <h4>grid-column-gap</h4>
+    <p>Defines horizontal space between columns</p>
+    <h2>Grid Item Properties</h2>
+    <h3>grid-column-start</h3>
+    <p> Defines where an item starts in columns.</p>
+    <h3>grid-column-end</h3>
+    <p>Defines where an item ends in columns.</p>
+    <h3>grid-column</h3>
+    <p>Shorthand for grid-column-start and grid-column-end.</p>
+    <h3>grid-row-start</h3>
+    <p>Defines where an item starts in rows.</p>
+    <h3>grid-row-end</h3>
+    <p>Defines where an item ends in rows.</p>
+    <h3>grid-row</h3>
+    <p>Shorthand for grid-row-start and grid-row-end.</p>
+    <h3>grid-area</h3>
+    <p>Assigns a grid item to a named grid area.</p>
+    <h2>FR-Fractuinal Unit</h2>
+    <p>A flexible unit used in CSS Grid to distribute space proportionally. For example, 
+        grid-template-columns: 2fr 1fr; means the first column gets twice the space of the second column.
+    </p>
+    <h2>Alignment Properties</h2>
+    <h3>justify-items</h3>
+    <p> Aligns items horizontally (start, end, center, stretch).</p>
+    <h3>align-items </h3>
+    <p>Aligns items vertically (start, end, center, stretch).</p>
+    <h3>place-items</h3>
+    <p>Shorthand for align-items and justify-items.</p>
+    <h3>justify-self</h3>
+    <p> Aligns an individual grid item horizontally.</p>
+    <h3>align-self</h3>
+    <p>Aligns an individual grid item vertically.</p>
+    <h3>place-self</h3>
+    <p>Shorthand for align-self and justify-self.</p>
+    <h3>justify-content</h3>
+    <p>Aligns the entire grid horizontally (start, end, center, space-between, etc.).</p>
+    <h3>align-content</h3>
+    <p>Aligns the entire grid vertically.</p>
+    <h3>place-content</h3>
+    <p>Shorthand for align-content and justify-content.</p>
+</body>
+</html>

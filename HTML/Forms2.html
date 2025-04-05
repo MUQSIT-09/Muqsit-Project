@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Form 1</h1>
+    <h2>Event Registration</h2>
+    <form >
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="text" name="email" id="email"><br><br>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" name="phone" id="phone"><br><br>
+        <label for="occupation">Occupation</label><br>
+        <select name="occupation" id="occupation">
+            <option value="student">Student</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+        <fieldset>
+            <legend>Topics Of Interest:</legend>
+            <!-- <label for="checkbox">Topics Of Interest:</label><br> -->
+            <input type="checkbox" name="checkbox1" id="checkbox1">
+            <label for="checkbox1">HTML</label><br>
+            <input type="checkbox" name="checkbox2" id="checkbox2">
+            <label for="checkbox1">CSS</label><br>
+            <input type="checkbox" name="checkbox3" id="checkbox3">
+            <label for="checkbox3">JS</label>
+        </fieldset>
+        <label for="comments">Comments:</label><br>
+        <textarea name="comments" id="comments"></textarea>
+        <input type="submit" value="Register" name="register" id="register">
+    </form>
+    <h1>Form 2</h1>
+    <h2>Job Application</h2>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="text" name="email" id="email"><br><br>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" name="phone" id="phone"><br><br>
+        <label for="resume">Resume:</label><br><br>
+        <input type="file" name="resume" id="resume"><br>
+        <label for="counter">Experience (in years):</label><br>
+        <input type="number" name="counter" id="counter" min="0" max="50">
+        <fieldset>
+            <legend>Skills:</legend>
+            <input type="checkbox" name="checkbox1" id="checkbox1">
+            <label for="checkbox1">HTML</label><br>
+            <input type="checkbox" name="checkbox2" id="checkbox2">
+            <label for="checkbox1">CSS</label><br>
+            <input type="checkbox" name="checkbox3" id="checkbox3">
+            <label for="checkbox3">JS</label><br>
+        </fieldset>
+        <br>
+        <label for="Education">Highest Education:</label><br>
+        <select name="Education" id="Education">
+            <option value="HighSchool">HighSchool</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Graduation">Graduation</option>
+        </select><br><br>
+        <fieldset>
+            <legend>Availability:</legend>
+            <input type="radio" name="radio" id="radio4" value="1">
+            <label for="radio4">Full-Time</label><br>
+            <input type="radio" name="radio" id="radio4" value="1">
+            <label for="radio5">Part-Time</label><br><br>
+        </fieldset>
+        <br>
+        <label for="Additionalcomment">Additional Comments: </label><br><br>
+        <textarea name="Additionalcomment" id="Additionalcomment"></textarea><br>
+        <input type="submit" value="Submit Application  ">
+    </form>
+    <h1>Form 3</h1>
+    <h2>Complex Form</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone">
+            <label for="dob">Date Of Birth::</label>
+            <input type="date" id="dob" name="dob">
+            <input type="radio" name="radio" id="radio6" value="1">
+            <label for="radio6">Male</label>
+            <input type="radio" name="radio" id="radio7" value="1">
+            <label for="radio7">Female</label>
+            <label for="Countryname">Country</label>
+            <select name="Countryname" id="Countryname">
+                <option value="India">India</option>
+                <option value="Afganisthan">Afganisthan</option>
+                <option value="Swizerland">Swizerland</option>
+                <option value="Luxemberg">Luxemberg</option>
+            </select>
+        </fieldset>
+        <fieldset>
+                <legend> <label for="Address">Address</label>  </legend>
+                <label for="Street">Street</label>
+                <input type="text" name="Street" id="Street"><br>
+                <label for="city">City</label>
+                <input type="text" name="city" id="city"><br>
+                <label for="state">State</label>
+                <input type="text" name="state" id="state"><br>
+                <label for="zipcode">Zipcode</label>
+                <input type="text" name="zipcode" id="zipcode">
+        </fieldset>
+        <fieldset>
+            <legend>Other Information</legend>
+            <label for="comments">Comments</label><br>   
+            <textarea name="comments" id="comments">Write Here Your Comments</textarea>
+            <label for="tandc">I agree to the terms of service</label>
+            <input type="checkbox" name="tandc" id="tandc">
+        </fieldset>
+        <input type="submit" name="Submit" id="Submit">
+    </form>
+</body>
+</html>

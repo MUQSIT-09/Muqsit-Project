@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms Tag</h1>
+    <p>Creates HTML Forms for user input</p>
+    <h1>Input Tag</h1>
+    <p>The Different Types of inputs ex:-radio button,texfeild,checkboxe etc</p>
+    <h1>Label Tag</h1>
+    <p>The Data which is visible in the Input Types of The Web Page </p>
+    <p>Id attribute of input and for attribute of label should be equal  </p>
+    <h1>Select Tag</h1>
+    <p>Used For DropDown Menu</p>
+    <h1>For having the Dropdown options of the menu we use option Tag</h1>
+    <h1>TextArea</h1>
+    <p> A multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form. </p>
+    <h1>FeildSet Tag</h1>
+    <p> Element is used to group several controls as well as labels (<label>) within a web form.</p>
+        <!-- Ex: Male,Female,Others Radio button -->
+    <h1>Legend Tag</h1>
+    <p> Element represents a caption for the content of its parent <fieldset>.</p>
+        <!-- Ex: The Caption for feildset Headings can be done by using Legend Tag -->
+    <h2>Example Projet</h2>
+    <!-- Kepping All The Forms together for grouping -->
+        <form >
+            <fielldset> 
+            <legend>Enter The Login Details</legend>
+            <input type="text" id="email" placeholder="Email-Id">
+            <!-- placeholder consists of text which will be visible in input -->
+            <label for="email">Enter Email Id</label><br><br>
+            <input type="text" id="password" placeholder="Password">
+            <label for="password">Enter password</label><br><br>
+            <input type="submit" value="Submit">
+            <!-- Here he value is for the dispaly/visible for button -->
+            </fielldset>
+        </form><br><br>
+        <form >
+            <fielldset> 
+            <legend>The DropDown</legend>
+            <label for="Select1">Choose :</label>
+            <select name="Select1" id="Select1" >
+                <!-- We Can Use Multiple for selecting more number of options, But it used in special scenarios only. -->
+                <option value="Rani LakshiMi Bai">Rani LakshiMi Bai</option>
+                <option value="Tipu Sultan">Tipu Sultan</option>
+                <option value="Leni Lingi">Leni Lingi</option>
+                <option value="Akbar">Akbar</option>
+                <option value="Raja Dahir">Raja Dahir</option>
+            </select><br><br>
+            <label for="textarea">Enter The Comments</label><br><br>
+            <textarea name="textarea" id="textarea" cols="25" rows="5" placeholder="Enter The Text"></textarea>
+        </fielldset>
+        </form>
+    <h1>Date</h1>
+    <label for="date">Choose Date:</label>
+    <input type="date" id="date">
+    <h1>Differnet Input Tag Attribute</h1>
+    <br>
+    <form >
+        <!-- By default input tag has text only -->
+        <!-- TextFeild -->
+        <label for="book">Enter The Book:</label>
+        <input type="text" name="book" id="Book">
+        <br><br>
+        <!-- Button -->
+        <label for="btn1">Subscribe</label>
+        <input type="submit" name="btn1" id="btn1" value="Subscribe">
+        <br><br>
+        <!-- RadioButton -->
+        <!-- For selcting only one out of many radiobutton they all should be only with one specific name as they are below -->
+        <label for="radio1">Male</label>
+        <input type="radio" name="radio" id="radio1" >
+        <br><br>
+        <label for="radio2">FeMale</label>
+        <input type="radio" name="radio" id="radio2" >
+        <br><br>
+        <label for="radio3">Trans</label>
+        <input type="radio" name="radio" id="radio3">
+        <br><br>
+        <!-- CheckBox -->
+        <label for="checkbox1">English</label>
+        <input type="checkbox" name="checkbox1" id="checkbox1">
+        <label for="checkbox2">Hindi</label>
+        <input type="checkbox" name="checkbox2" id="checkbox2">
+        <br><br>
+        <!-- FileSelector -->
+        <label for="fileselct1">Choose</label>
+        <input type="file" name="fileselct1" id="fileselct1"><br><br>
+        <!-- Image -->
+        <!-- If i want A Image As a Button like subscribe  -->
+        <input type="image" name="imagbtn1" id="imagbtn1" alt="error" src="download.webp" width="60px"><br><br>
+        <!-- PasswordFeild to hide -->
+        <label for="pass1">Enter The Password</label>
+        <input type="password" id="pass1" name="pass1">
+    </form>
+</body> 
+</html>

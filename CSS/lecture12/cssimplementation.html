@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style !important> </style>
+</head>
+<body>
+    <h1> CSS it depends on four key factors:</h1>
+    <pre>
+        1.Importance (Origin)
+          Inline styles (style attribute) > Internal styles External styles (<link> tag)
+          Browser default styles have the lowest priority.
+        2.Specificity
+          Specific selectors (like IDs) take precedence over less specific ones (like classes or element selectors).
+          Example: #id > .class > tag
+        3.Source Order
+          When selectors have the same specificity, the one declared last in the code will be applied.
+        4.Inheritance
+          Some properties (like text color and font) are inherited from parent elements, while others (like margin and padding) are not.
+    </pre>
+    <pre>
+        If you keep important then it is given the most priority
+        Otherwise the order is:
+        Inline > Internal > External
+        Otherwise it also checks the source code and which is on the last of the code that is having more priority.
+    </pre>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-Transforms</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .conatiner{
+            background-color: rgb(211, 176, 131);
+            padding: 5rem;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1rem;
+        }
+        .items{
+            height: 150px;
+            padding: 2rem;
+            width: 150px;
+            border: 3px solid black;
+            background-color: rgb(71, 71, 218);
+        }
+        #RotateX:hover{
+            transform: RotateX(45deg);
+        }
+        #RotateY:hover{
+            transform: RotateY(-45deg);
+        }
+        #RotateZ:hover{
+            transform: RotateZ(-45deg);
+        }
+        #TranslateX:hover{
+            transform: translateX(100px);
+        }
+        #TranslateY:hover{
+            transform: translateY(-100px);
+        }
+        #TranslateZ:hover{
+            transform: perspective(300px) translateZ(-100px);
+        }
+        #ScaleX:hover{
+            transform: scaleX(1.5);
+        }
+        #ScaleY:hover{
+            transform: scaleY(1.5);
+        }
+        #ScaleZ:hover{
+            transform:  perspective(300px) scaleZ(1.5) RotateY(-45deg) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="items" id="RotateX">RotateX</div>
+        <div class="items" id="RotateY">RotateY</div>
+        <div class="items" id="RotateZ">RotateZ</div>
+        <div class="items" id="TranslateX">TranslateX</div>
+        <div class="items" id="TranslateY">TranslateY</div>
+        <div class="items" id="TranslateZ">TranslateZ</div>
+        <div class="items" id="ScaleX">ScaleX</div>
+        <div class="items" id="ScaleY">ScaleY</div>
+        <div class="items" id="ScaleZ">ScaleZ</div>
+    </div>
+    <div class="information">
+        <h1>3D Transformations in CSS</h1>
+        <h2>Rotat3</h2>
+        <h3>rotateX</h3>
+        <p>Rotates the element around the X-axis.</p>
+        <h3>rotateY</h3>
+        <p>Rotates the element around the Y-axis.</p>
+        <h3>rotateZ</h3>
+        <p>Rotates the element around the Z-axis.</p>
+        <h2>Translate (Move)</h2>
+        <h3>translateX(value)</h3>
+        <p>Moves the element along the X-axis.</p>
+        <h3>translateY(value)</h3>
+        <p>Moves the element along the Y-axis.</p>
+        <h3>translateZ(value)</h3>
+        <p>Moves the element along the Z-axis.</p>
+        <h2>Scale (Resize)</h2>
+        <h3>scaleX(value)</h3>
+        <p>Scales the element along the X-axis.</p>
+        <h3>scaleY(value)</h3>
+        <p>Scales the element along the Y-axis.</p>
+        <h3>scaleZ(value)</h3>
+        <p>Scales the element along the Z-axis.</p>
+        <h2>Short-Hand</h2>
+        <p>transform: rotateX(30deg) translateZ(50px) scaleY(1.5);</p>
+        <h2>Perspective in 3D Transformations</h2>
+        <p>A sense of depth by determining how far the viewer is from the 3D object. <br>
+           It makes elements appear closer or farther along the Z-axis.
+        </p>
+        <P>Basically from how much sitance you are seeing the object</P>
+    </div>
+</body>
+</html>

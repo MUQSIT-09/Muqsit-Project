@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shadow</title>
+    <style>
+        .container{
+            background-color: beige;
+            height: 650px;
+            border:2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: aquamarine;
+            width: 330px;
+            height: 330px;
+            border: 1px solid brown;
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: -10px -15px brown; */
+            /* box-shadow: 20px 15px 4px yellow; */
+            /* box-shadow: 10px 15px 5px 100px rgb(29, 232, 42); */
+            /* box-shadow: inset 10px 15px burlywood; */
+            /* box-shadow: 10px 15px blue ,15px 13px green; */
+            /* text-shadow: 2px 2px 5px #19dc19; */
+        }
+        #heading1{
+            /* text-shadow: 12px 18px 1px rgb(51, 199, 38); */
+            text-shadow: 2px 2px 4px red, -2px -2px 4px blue, 4px 4px 6px green; /*Applying 3 text-shadow together */
+        }
+    </style>
+</head>
+<body>
+    <h1>Shadow</h1>
+    <div class="container">
+        <div class="box">
+            <img src="Taj_Mahal.jpeg" height="100px" width="170px"> 
+            <h2 id="heading1">Welcome To CodeHunters</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, deserunt deleniti rerum assumenda cupiditate vitae numquam asperiores ipsam eos voluptatem quia alias.</p>
+        </div>
+    </div>
+    <div class="content">
+        <h2>box-shadow</h2>
+        <h3>box-shadow: 5px 5px 10px gray;</h3>
+        <p>First value: Horizontal offset (X-axis), If you give in negative then it will come in opposite side.
+           Second value: Vertical offset (Y-axis)
+           Third value (optional): Blur radius (big number = blur will become more bigger,color will get more lighter) there is no negative radius for blur.
+           Fourth value (optional): Spread (The value specifies that how much the shadow should spread)
+           Last: Color
+        </p>
+        <h2>Inset - To give the shadow inside the box</h2>
+        <p>Same as above syntax just be should apply inset to apply the shadow inside the box</p>
+        <h2>Applying Multiple shadow</h2>
+        <p>You can apply Multiple shadow using comma-','</p>
+        <h2>text-shadow</h2>
+        <p>→ Adds a shadow to text. <br>
+            text-shadow: 2px 2px 5px black; <br>
+            By default the shadow color is black.
+        </p>
+        <h2>Custom Variable</h2>
+        <p>It will be applicable within the braces only that's if we want to use again and again we can declare in root</p><br>
+        <h2>Define a Variable:</h2>
+        <h3>Declaring the root: to use anywhere you want</h3>
+        <p>:root {
+            --primary-color: #3498db;
+            --font-size: 16px;
+          }
+        </p> <br>
+        <h2>Use the Variable:</h2>
+        <p>body {
+            background-color: var(--primary-color);
+            font-size: var(--font-size);
+          }
+        </p>
+        <h2>Update Variables Dynamically:</h2>
+        <p>
+            body.dark-mode {
+                --primary-color: #1a1a1a;
+              }
+        </p>
+    </div>
+</body>
+</html>

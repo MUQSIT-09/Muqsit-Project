@@ -1,0 +1,191 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main container */
+#gameContainer {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Title */
+h1 {
+    color: #ff6f61;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Categories section */
+.Categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.Categories button {
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.Categories button:hover {
+    background: #e85a4f;
+    transform: scale(1.1);
+}
+
+/* Game Area */
+#gameArea {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+#emojiClue {
+    font-size: 2rem;
+    background: #ffe8e8;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 2px solid #ff6f61;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button.submit-btn {
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+button.submit-btn:hover {
+    background: #e85a4f;
+    transform: scale(1.05);
+}
+
+/* Feedback and Score */
+#feedback {
+    font-size: 1.2rem;
+    color: #4caf50;
+    margin: 10px 0;
+    min-height: 20px; /* Ensures layout stays consistent */
+}
+
+#feedback.error {
+    color: #e85a4f;
+}
+
+#score, #timer {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .Categories button {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    input[type="text"] {
+        width: 90%;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    opacity: 0.9;
+    animation: fade-in-out 3s ease-in-out;
+}
+
+.notification.info {
+    background-color: #007bff;
+}
+
+.notification.error {
+    background-color: #dc3545;
+}
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    10% {
+        opacity: 0.9;
+        transform: translateY(0);
+    }
+    90% {
+        opacity: 0.9;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}

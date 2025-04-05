@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dumb Charades Game</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="Categories">
+        <button onclick="navigateToCategory('Movies')">Movies</button>
+        <button onclick="navigateToCategory('Songs')">Songs</button>
+        <button onclick="navigateToCategory('WebSeries')">Web Series</button>
+        <button onclick="navigateToCategory('Celebrities')">Celebrities</button>
+        <button onclick="navigateToCategory('Books')">Books</button>
+        <button onclick="navigateToCategory('Quotes')">Quotes</button>
+        <button onclick="navigateToCategory('Landmarks')">Landmarks</button>
+        <button onclick="navigateToCategory('Food')">Food</button>
+    </div>
+    <div id="gameArea" style="display:none;">
+        <h1>Guess the Emoji</h1>
+        <div id="timer">Time Left: 60s</div>
+        <div id="score">Score: 0</div>
+        <p id="emojiClue"></p>
+        <input type="text" id="userGuess" placeholder="Your guess">
+        <button onclick="checkGuess()">Submit Guess</button>
+        <div id="feedback"></div>
+    </div>
+</body>
+</html>

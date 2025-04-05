@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FlexBox</title>
+    <style>
+        
+        .container{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex; /* By Default the flex direction is row, main axis is veritical line and cross axis is horizontal */
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            /*justify-content: center; /* Corresponding to the horizontal axis it will be  placed in the center */
+            height: 500px;
+            /* align-items: center;
+            align-content: center; */
+        }
+        p{
+            background-color: rgb(231, 191, 213);
+            border: 3px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex; 
+            flex-direction: row;
+        }
+        h1,h2,h3{
+            margin: 2px;
+            padding: 2px;
+            display: flex; 
+            flex-direction: row;
+            align-items: center;
+        }
+        #box1{
+            background-color: aqua;
+            order:500;
+            /* flex-shrink: 5; */
+            /* flex-grow: 5; */
+            align-self: center;
+        }
+        #box2{
+            background-color: blue;
+            /* flex-grow: 1; */
+        }
+        #box3{
+            background-color: orange;
+            /* flex-grow: 1; */
+        }
+        #box4{
+            background-color: brown;
+            /* order: -1; */
+            /* flex-grow: 1; */
+            flex-basis: 400px;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid brown;
+            margin: 2px;
+            padding: 2px;
+        }
+        .link{
+            background-color: rgb(22, 224, 90);
+        }
+    </style>
+</head>
+<body>
+    <h1>FlexBox</h1>
+    <p>makes it easy to arrange elements in a row or column, automatically adjusting their size and spacing to fit different screen sizes. It helps in creating responsive designs with minimal effort.</p>
+    <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+    </div>
+    <h2>Properties Of Flex</h2>
+    <h3>1.flex</h3>
+    <p>You should intialize your display as flex</p>
+    <h3>2.flex-direction</h3>
+    <p>By default the direction is row you can change it to column,row-reverse,column-reverse</p>
+    <h3>3.flex-flow</h3>
+    <p>flex-flow is a shorthand property  in CSS that combines two properties: flex-direction,flex-wrap</p>
+    <h3>4.flex-wrap</h3>
+    <p>Untill the space is availabe it will not be squeezing it will be going to next line , when there is no space then it is squezed</p>
+    <h3>5.justify-content</h3>
+    <p>Corresponding to the main axis it places in case of row=horizontal,column=veritical</p>
+    <h3>6.align-items</h3>
+    <p>Corresponding to the main axis it places in case of row=horizontal,column=veritical</p>
+    <h3>7.allign-content</h3>
+    <p>removes the spacing between multiple line of content while it is wrapped only</p>
+    <h2>Properties To Apply On Flex-Items </h2>
+    <h3>1.Order Property</h3>
+    <p>You can keep your flex-items in the particular sequence </p>
+    <h3>2.flex-shrink</h3>
+    <p>shrink => squeezing o the item/box . <br>
+        If you want to shrink the item more fastly. 
+    </p>
+    <h3>3.flex-grow</h3>
+    <p>grow => opposite of shrinking, expanding basically</p>
+    <h3>4.flex-basis</h3>
+    <p>It sets teh flex-item dimension</p>
+    <h3>5.flex shorthand notatiom</h3>
+    <p>A shorthand for setting how a flex item grows, shrinks, and defaults in size </p>
+    <h3>align-self</h3>
+    <p>how to align an item itself</p>
+    <a href="https://www.codehelp.in/dashboard/fruitbox-flex" class="link">Practice Here</a>
+</body>
+</html>

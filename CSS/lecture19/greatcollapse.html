@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Great Collapse</title>
+    <style>
+        .box{
+            border: 1px solid black;
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            margin: 2px;
+            background-color: aqua;
+            border:2px solid black;
+            /*float: left;*/  /* The parent box gets collapsed -> here the boxes are overflow to their parents */
+            overflow: hidden;
+        }
+        #item1{
+            float: left;
+        }
+        #item2{
+            float: left;
+        }
+        #item3{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item" id="item1">A</div>
+        <div class="item" id="item2">B</div>
+        <div class="item" id="item3">C</div>
+    </div>
+</body>
+</html>

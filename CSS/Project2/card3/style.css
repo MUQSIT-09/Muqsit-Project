@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    /* min-height: 980px; */
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+.box{
+    width: 66%;
+    height: 66%;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightbox{
+    height: 100%;
+    width: 50%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image:url('tech.jpg');
+    background-size: cover;  This didn't worked for me for the entire element basically the resolution of image*/
+}
+.rightbox img{
+    width: 510px;
+    height: 483px;
+    background-color: aqua;
+} 
+.leftbox{
+    height: 100%;
+    width: 50%;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(251,128,128,1) 0%);
+}
+.contentbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 66px;
+    padding: 15px;
+    gap: 60px;
+}
+.reach{
+    display: flex;
+    justify-content: flex-start;
+    gap: 63px;
+
+}

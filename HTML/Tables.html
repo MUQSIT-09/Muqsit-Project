@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML TABLE</title>
+</head>
+<body>
+    <h1>What is A Table</h1>
+    <p> Represents tabular data—that is,
+        information presented in a two-dimensional table 
+        comprised of rows and columns of cells containing data.
+    </p>
+    <h2>Table head thead</h2>
+    <p>Consists of head for the Table</p>
+    <h2>Table body tbody</h2>
+    <p>Consists of body for the Table</p>
+    <h2>Table footer tfoot</h2>
+    <p>Mostly used to summarize the teh whole table like having the sum of all the items.</p>
+    <h2>rowspan</h2>
+    <p>It will extend until the rows which number you have given</p>
+    <h2>colspan</h2>
+    <p>It will extend until the columns which number you have given</p>
+    <h2>Simple Table</h2>
+    <table border="1">
+        <tr>
+            <td>Column1</td>
+            <td>Column2</td>
+            <td>Column3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+        </tr>
+        <tr>
+            <td colspan="3">Row 3 Cell 1</td>
+        </tr>
+    </table>
+    <h2>Another Table</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>No</td>
+                <td>Full Name</td>
+                <td>Position</td>
+                <td>Salary</td>
+                <td rowspan="4">Type</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>Microsoft</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Steve Jobs</td>
+                <td>Apple</td>
+                <td>$1200</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry Page</td>
+                <td>Google</td>
+                <td>$1100</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mark Zuckerberg</td>
+                <td>FaceBook</td>
+                <td>$1300</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Expenses:</td>
+                <td>$4600</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h2>Third Table</h2>
+    <table border="1">
+        <thead>
+            <th>Country</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Street</th>
+            <th>Male</th>
+            <th>FeMale</th>
+            <th>Others</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="8">1</td>
+                <td rowspan="4">kerala</td>
+                <td rowspan="2">Cochin</td>
+                <td>NewStreet</td>
+                <td>500</td>
+                <td>600</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Main Street</td>
+                <td>300</td>
+                <td>288</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Trivandrum</td>
+                <td>Guru Street</td>
+                <td>500</td>
+                <td>200</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>TVK Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Maharastra</td>
+                <td rowspan="2">Mumbai</td>
+                <td>Krisha Street</td>
+                <td>700</td>
+                <td>850</td>
+                <td>1</td>
+           </tr>
+           <tr>
+                <td>Main Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>2</td>
+           </tr>
+           <tr>
+                <td rowspan="2">Surath</td>
+                <td>New Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>4</td>
+           </tr>
+           <tr>
+                <td>Billa Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>2</td>
+           </tr>
+           <tr>
+                <td rowspan="2">2</td>
+                <td rowspan="2">Alaska</td>
+                <td rowspan="2">AKA Central</td>
+                <td>New Sreet</td>
+                <td>200</td>
+                <td>210</td>
+                <td>2</td>
+           </tr>
+           <tr>
+                <td>Cross Sreet</td>
+                <td>1000</td>
+                <td>1050</td>
+                <td>10</td>
+           </tr>
+        </tbody>
+    </table>
+</body>
+</html>

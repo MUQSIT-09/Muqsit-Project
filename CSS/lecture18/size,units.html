@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Size Units:</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            border: solid 2px red;
+            width: 50%;
+        }
+        .parent{
+            border: 1px solid black;
+            background-color: beige;
+            width: 50%;
+        }
+        .child{
+            border: 1px solid green;
+            background-color: aqua;
+            width: 50%; /* 50% of parent width */
+        }
+        .container{
+            background-color: beige;
+            border: 3.5px solid green;
+            width: 50vw;
+            height:100vh;
+        }
+         .container1{
+            font-size: 10px;
+         }
+         .box{
+            font-size: 10em;
+         }
+         #firstpara{
+            border: 1px solid black;
+            font-size: 5rem;
+         }
+         p{
+            font-size: medium;
+         }
+    </style>
+</head>
+<body>
+    <h1>CSS Size Units:</h1>
+    <h2>Percentage</h2>
+    <p>You can take Percantage according to the parent,</p>
+    <div class="box">
+        Welcome To CodeHunters
+    </div>
+    <div class="parent">
+        <div class="child">
+            Child
+        </div>
+    </div>
+    <h2>vw,vh</h2> 
+    <p> vw=veiwport  if you keep width:100vh it takes 100% of viewport width <br> 
+        vh=veiwheight if you keep height:100vh it takes 100% of viewport height.
+    </p>
+    <div class="container">
+        Welcome To CodeHunters
+    </div> 
+    <h2>EM,REM</h2>
+    <p>Em is dependent on parent,or element itslef</p>
+    <p>Default font size is 16 px so 1em=16px(body)</p>
+    <p id="firstpara">Hello Jee</p>
+    <div class="container1">
+        <div class="box">
+            Welcome To CodeHunters
+        </div>
+    </div>
+    <p>Rem it is relative unit according to the root element</p>
+    <p>According to html property it sets it's dimension</p>
+    <p>we should use more relative unit compared to absolute </p>
+    <br><br>
+    <h2>Physical Pixels Vs Logical Pixels</h2>
+    <h3>Physical Pixels</h3>
+    <p>
+        <b>
+            The actual tiny dots (RGB subpixels) that make up a screen. <br>
+            Fixed per device; for example, a 1080p display has 1920×1080 physical pixels. <br>
+            Higher-resolution screens (like Retina displays) have more physical pixels packed into the same screen size.
+        </b>
+    </p>
+    <h3> Logical Pixels (CSS Pixels, Density-Independent Pixels)</h3>
+    <p>
+        <b>
+            A unit of measurement used in web and UI design to maintain consistent sizing across devices. <br>
+            Browsers and operating systems scale logical pixels based on the screen's pixel density (DPI/PPI). <br>
+            On high-DPI screens, multiple physical pixels represent one logical pixel to ensure sharpness. <br>
+            Example: A 100px wide element in CSS may occupy 200 or 300 physical pixels on high-resolution displays.
+        </b>
+    </p>
+    <h3>Formula for Scaling:</h3>
+    <p>
+        <b>
+            Logical Pixels= Physical Pixels/Device Pixel Ratio(DPR);
+        </b>
+    </p>
+    <h3>PPI (Pixels Per Inch) vs. GPI (Grid Per Inch)</h3>
+    <p>
+        <b>
+            Definition: PPI refers to the number of physical pixels displayed per inch on a screen. <br>
+            Usage: Primarily used for digital screens (monitors, smartphones, tablets). <br>
+            Impact: Higher PPI results in sharper and more detailed images. <br>
+            Example: <br>
+            A 1080p display (1920×1080) on a 24-inch monitor has around 92 PPI. <br>
+            A Retina display on an iPhone may have ~326 PPI or more for crisper visuals. <br>
+        </b>
+    </p>
+    <p>
+        <b>
+            Definition: GPI refers to the number of grid cells per inch, mainly used in graphical representations, printing, and scanning. <br>
+            Usage: Found in grid-based systems, old-school bitmap displays, and some scanning technologies. <br>
+            Impact: Higher GPI improves the accuracy of printed graphics, CAD drawings, or scanning resolution. <br>
+            Example: <br>
+            A printed circuit board (PCB) might be designed with 10 GPI to define grid spacing for precise component placement. <br>
+            Older CRT monitors sometimes referenced GPI to describe scan resolution.
+
+        </b>
+    </p>
+</body>
+</html>

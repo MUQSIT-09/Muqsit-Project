@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="inputfeildscontainer">
+                <div class="searchbar1">
+                    <input type="text" id="searchbarfeild1" placeholder="Enter The country Name" spellcheck="false">
+                </div>
+                <div class="rervese">
+                    <button><img src="Reverse.png"></button>
+                </div>
+                <div class="searchbar2">
+                    <input type="text" id="searchbarfeild2" placeholder="Enter The country Name" spellcheck="false">
+                </div>
+                <div class="search">
+                    <button><img src="Search.png"></button>
+                </div>
+            </div>
+            <main class="maincontainer">
+                <div class="countryflagscontainer">
+                    <div class="flag1"></div>
+                    <div class="flag2"></div>
+                </div>
+                <div class="liveexchangerate">
+                    <p>1 USD = <span id="exchangeRate">82.5</span> INR</p>
+                </div>
+                <div class="inputfeildformoneyconversion">
+                    <div class="inputvaluecontainer">
+                        <input type="number" id="amount" class="inputvalue" placeholder="Enter amount">
+                    </div>
+                    <div class="update">
+                        <p class="updatevalue">Converted: <span id="convertedAmount">0</span></p>
+                    </div>
+                </div>
+            </main>
+            <div class="botomsection">
+                <div class="graph">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
