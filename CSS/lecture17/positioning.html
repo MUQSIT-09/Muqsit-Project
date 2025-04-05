@@ -1,79 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>CSS Positioning</title>
-    <style>
-        .container{
-            border: 1px solid black;
-            height: 5000px;
-        }
-        img{
-            margin: 12px;
-        }
-        .image2{
-            top: 100px;
-            /* position: absolute; */
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>CSS Positioning</title>
+        <style>
+            .container{
+                border: 1px solid black;
+                height: 5000px;
+            }
+            img{
+                margin: 12px;
+            }
+            .image2{
+                top: 100px;
+                /* position: absolute; */
 
-        }
-        .container{
-            position: relative;
-        }
-        .image4{
-            position: fixed;
-            top: 400px;
-        }
-        .image3{
-            position: sticky;
-            top: 100px;
-        }
-        .box{
-            background-color: aquamarine;
-            height: 5000px;
-        }
-    </style>
-</head>
-<body>
-    <h1>CSS Positioning</h1>
-    <h2>What is CSS Positioning?</h2>
-    <p>How to position the elements in the webpage</p>
-    <h2>Types Of Positioning</h2>
-    <h3>1.Static</h3>
-    <p>Elements appear in the normal document flow. <br>
-        No effect from top, right, bottom, or left,zindex. <br>
-        By Default The position is static.
-    </p>
-    <h3>2.Relative</h3>
-    <p>Positioned relative to its normal position. <br>
-        Can use top, right, bottom, and left to shift it. <br>
-        The Image Gap/Space is till maintained. 
-    </p>
-    <h3>3.Absolute </h3>
-    <p>If You Want to do overlapping,<br>
-        Positioned relative to the nearest positioned ancestor (relative, absolute, or fixed).
-        If no ancestor is positioned, it is placed relative to the <html> (viewport).
-        The Image Gap/Space is not maintained. 
-    </p>
-    <h3>4.Fixed </h3>
-    <p>Positioned relative to the viewport. <br>
-        Stays in the same place even when scrolling. <br>
-        fixed is fixed correspondong the whole window, doesn't matter with any parent it is applicable to entire webpage.
-    </p>
-    <h3>5.Sticky </h3>
-    <p>Acts like relative but becomes fixed when scrolled past a threshold. <br>
-        Requires a top, bottom, left, or right value. <br>
-        Sticky shows sticky behaviour upto it's parent container,<br>
-        But fixed is fixed correspondong the whole window, doesn't matter with any parent it is applicable to entire webpage.
-    </p>
-    <P></P>
-    <div class="container">
-        <img src="sup1.jpg" alt="The Poster 1" height="300px" width="300px" class="image1">
-        <img src="sup2.jpg" alt="The Poster 2" height="300px" width="300px" class="image2">
-        <img src="sup3.jpg" alt="The Poster 3" height="300px" width="300px" class="image3">
-        <img src="sup4.jpg" alt="The Poster 4" height="300px" width="300px" class="image4">
+            }
+            .container{
+                position: relative;
+            }
+            .image4{
+                position: fixed;
+                top: 400px;
+            }
+            .image3{
+                position: sticky;
+                top: 100px;
+            }
+            .box{
+                background-color: aquamarine;
+                height: 5000px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Positioning</h1>
+        <h2>What is CSS Positioning?</h2>
+        <p>How to position the elements in the webpage</p>
+        <h2>Types Of Positioning</h2>
+        <h3>1.Static</h3>
+        <p>Elements appear in the normal document flow. <br>
+            No effect from top, right, bottom, or left,zindex. <br>
+            By Default The position is static.
+        </p>
+        <h3>2.Relative</h3>
+        <p>Positioned relative to its normal position. <br>
+            Can use top, right, bottom, and left to shift it. <br>
+            The Image Gap/Space is till maintained. 
+        </p>
+        <h3>3.Absolute </h3>
+        <p>If You Want to do overlapping,<br>
+            Positioned relative to the nearest positioned ancestor (relative, absolute, or fixed).
+            If no ancestor is positioned, it is placed relative to the <html> (viewport).
+            The Image Gap/Space is not maintained. 
+        </p>
+        <h3>4.Fixed </h3>
+        <p>Positioned relative to the viewport. <br>
+            Stays in the same place even when scrolling. <br>
+            fixed is fixed correspondong the whole window, doesn't matter with any parent it is applicable to entire webpage.
+        </p>
+        <h3>5.Sticky </h3>
+        <p>Acts like relative but becomes fixed when scrolled past a threshold. <br>
+            Requires a top, bottom, left, or right value. <br>
+            Sticky shows sticky behaviour upto it's parent container,<br>
+            But fixed is fixed correspondong the whole window, doesn't matter with any parent it is applicable to entire webpage.
+        </p>
+        <P></P>
+        <div class="container">
+            <img src="sup1.jpg" alt="The Poster 1" height="300px" width="300px" class="image1">
+            <img src="sup2.jpg" alt="The Poster 2" height="300px" width="300px" class="image2">
+            <img src="sup3.jpg" alt="The Poster 3" height="300px" width="300px" class="image3">
+            <img src="sup4.jpg" alt="The Poster 4" height="300px" width="300px" class="image4">
 
-    </div>
-    <div class="box">
-        <p>Leni Lingi</p>
-    </div>
-</body>
-</html>
+        </div>
+        <div class="box">
+            <p>Leni Lingi</p>
+        </div>
+    </body>
+    </html>
