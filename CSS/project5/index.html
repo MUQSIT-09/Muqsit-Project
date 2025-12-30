@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
 </head>
 <body>
@@ -27,27 +26,30 @@
             </div>
             <main class="maincontainer">
                 <div class="countryflagscontainer">
-                    <div class="flag1"></div>
-                    <div class="flag2"></div>
+                    <div class="flag1">
+                        <img src="https://flagsapi.com/BE/flat/64.png" alt=" ">
+                    </div>
+                    <div class="flag2">
+                        <img src="https://flagsapi.com/BE/flat/64.png" alt=" ">
+                    </div>
                 </div>
                 <div class="liveexchangerate">
-                    <p>1 USD = <span id="exchangeRate">82.5</span> INR</p>
+                    <p id="exchangeRate"></p>
                 </div>
                 <div class="inputfeildformoneyconversion">
                     <div class="inputvaluecontainer">
                         <input type="number" id="amount" class="inputvalue" placeholder="Enter amount">
                     </div>
                     <div class="update">
-                        <p class="updatevalue">Converted: <span id="convertedAmount">0</span></p>
+                        <p class="updatevalue" id="convertedAmount"></p>
                     </div>
                 </div>
             </main>
             <div class="botomsection">
-                <div class="graph">
-                    
-                </div>
+                    <p class="messageinfo" id="mesaagedisplayed"></p>
             </div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
