@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Muqsit - Cognizant GenC Prep</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: #f0f0f0;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: background 0.4s ease, color 0.4s ease;
+        }
+        h1 {
+            color: blue;
+            font-weight: bold;
+            font-size: 40px;
+            margin: 10px 0;
+            transition: color 0.4s ease;
+        }
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        ul {
+            font-size: 20px;
+            list-style-position: inside;
+            text-align: center;
+            margin: 20px 0;
+            padding: 0;
+        }
+        li {
+            margin: 8px 0;
+        }
+        button {
+            margin: 10px 0;
+            padding: 12px 24px;
+            background-color: blueviolet;
+            color: aliceblue;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+            font-size: 16px;
+        }
+        /* ===== Dark Mode Styles ===== */
+        body.dark-mode {
+            background: #333;
+            color: #fff;
+        }
+        body.dark-mode h1 {
+            color: #00ffff;
+        }
+        .Preperation{
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .buttonincrementsdecrements{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 11px;
+        }
+        
+    </style>
+</head>
+<body id="pageBody">
+    <h1>Abdul Muqsit</h1>
+    <p>Preparing for Cognizant GenC 2026</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Cognizant_logo_2022.svg/512px-Cognizant_logo_2022.svg.png"
+         alt="Cognizant motivation banner">
+    <ul>
+        <li>Daily Coding Practice</li>
+        <li>SQL & OOPs Revision</li>
+        <li>Relocation Ready</li>
+    </ul>
+    <button onclick="motivateMe()">Motivate Me!</button>
+    <form id="targetForm" onsubmit="checkTarget(event)">
+        <label for="LPA">Enter your target package (LPA):</label>
+        <input type="text" id="LPA" placeholder="e.g. 6.75">
+        <button type="submit">Submit Target</button>
+    </form>
+    <div class="Preperation" id="PrepDays">Preparation Days Left: 0</div>
+    <div class="buttonincrementsdecrements">
+        <button type="button" onclick="Increment()">+</button>
+        <button type="button" onclick="Decrement()">-</button>
+    </div>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <table border="1" id="prepTable" >
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Task</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Arrays & Strings</td>
+                <td>Done</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>SQL Joins</td>
+                <td>In Progress</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>OOPs Concepts</td>
+                <td>Pending</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        let count = 0;
+        function motivateMe() {
+            alert("You are doing great! Keep going for Cognizant GenC!");
+        }
+        function checkTarget(event) {
+            event.preventDefault();
+            const target = document.getElementById("LPA").value.trim();
+            if (!target) {
+                alert("Please enter a target!");
+            } else {
+                alert(`Your target is ${target} LPA - Let's achieve it for Cognizant GenC!`);
+            }
+        }
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+        function Increment() {
+            count++;
+            upadateCount();
+        }
+        function Decrement() {
+            if (count > 0) {
+                count--;
+            }
+            upadateCount();
+        }
+        function upadateCount() {
+            document.getElementById("PrepDays").textContent =`Preparation Days Left: ${count}`;
+        }
+    </script>
+</body>
+</html>

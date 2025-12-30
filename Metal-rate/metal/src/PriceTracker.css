@@ -1,0 +1,177 @@
+/* Container & Background */
+.tracker-container {
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #d0f0ed, #ffe5b4); /* soft gradient */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Title */
+.tracker-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #5a4fcf;
+}
+
+/* Controls Grid */
+.tracker-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 40px;
+}
+
+/* Individual Control Card */
+.control {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #ffffffcc;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.control:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.control label {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Select boxes */
+.control select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #aaa;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.control select:focus {
+  border-color: #5a4fcf;
+  box-shadow: 0 0 6px rgba(90,79,207,0.3);
+}
+
+/* Button Styling */
+.control button {
+  width: 100%;
+  margin-top: auto;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #5a4fcf, #7f8aff);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.control button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Error Message */
+.tracker-error {
+  color: red;
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* Result Box */
+.tracker-result {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffffcc;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tracker-result:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+/* Result Header */
+.result-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #5a4fcf;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Prices */
+.result-price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #333;
+}
+
+.result-usd {
+  font-size: 1rem;
+  margin: 8px 0;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.result-date {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .tracker-title {
+    font-size: 2.5rem;
+  }
+  .tracker-controls {
+    gap: 15px;
+  }
+  .control {
+    padding: 15px;
+  }
+  .control button {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tracker-title {
+    font-size: 2rem;
+  }
+  .tracker-controls {
+    grid-template-columns: 1fr;
+  }
+}

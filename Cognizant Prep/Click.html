@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="height: 100vh; margin: 0;display: flex;align-items: center;justify-content: center;flex-direction: column; gap: 20px;">
+    <!-- <input style="padding: 8px;border-radius: 3.5px;" type="text" name="Username" placeholder="Write Your Name" id="textinput">  -->
+    <p id="textinput" style="width: 135vh; font-size: 25px;">
+        LeniLingi Was Always A Topper But From Bottom Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum officia mollitia at culpa libero totam reprehenderit nostrum dolor quidem exercitationem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam asperiores consectetur. Eveniet quasi odit minima eos iste saepe cupiditate! Unde aliquid tempore nihil quaerat blanditiis. Possimus et dolore corrupti consectetur tenetur sapiente eligendi repudiandae sint aspernatur excepturi iusto optio reprehenderit cupiditate cum ipsum delectus voluptates praesentium, neque magni aut! Vitae quos natus nesciunt corporis? Quia animi itaque necessitatibus molestias nemo sint 
+    </p>
+    <button  type="button" style="background: green;color: white;padding: 10px; border-radius: 10px;" onclick="ChangeText()">Greet Me</button>
+    <script>
+        function ChangeText() {
+            // RGB Version
+            // const r = Math.floor(Math.random()*256);
+            // const g = Math.floor(Math.random()*256);
+            // const b = Math.floor(Math.random()*256);
+            // const random = `rgb(${r},${g},${b})`
+            // document.getElementById('textinput').style.color = random;
+
+            // HUE Version
+            // const randomnumber = Math.floor(Math.random()*360);
+            // const huecolor = `hsl(${randomnumber},100%,50%)`;
+            // document.getElementById('textinput').style.color = huecolor;
+
+            // HEX Decimal :
+            const hexcolor = `#${Math.floor(Math.random()*16777215).toString(16).padStart(6,'0')}`;
+            document.getElementById('textinput').style.color = hexcolor;
+        }
+    </script>
+</body>
+</html>
